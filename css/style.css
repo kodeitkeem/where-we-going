@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+  }
