@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(255, 255, 255, 0.7)), url("/img/maldives.jpeg");
+    background: linear-gradient(rgba(43, 43, 43, 0.7), rgba(102, 102, 102, 0.7)), url("/img/maldives.jpeg");
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: center;
@@ -49,7 +49,7 @@
   }
 
   ul li a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--secondary-brand-color) !important;
   }
@@ -69,8 +69,8 @@
   }
 
   .login-btn:hover {
-    background: var(--accent-color) !important;
-    color: var(--secondary-brand-color) !important;
+    background: var(--secondary-brand-color) !important;
+    color: var(--accent-color) !important;
   }
 
 
@@ -151,3 +151,69 @@
   textarea:focus, input:focus{
     outline: none;
   }
+
+  .images {
+    margin: 340px 0px 0px 0px;
+  }
+
+  .images div {
+    width: 33%;
+    margin: 0px 10px;
+    box-shadow: 4px 4px 100px rgba(70, 70, 70, 0.555);
+    cursor: pointer;
+    color: var(--secondary-brand-color);
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+  }
+
+  .img1 {
+    background-image: url('/img/road.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 100%;
+  }
+
+  .img2 {
+    background-image: url('/img/miami.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 100%;
+  }
+
+  .img3 {
+    background-image: url('/img/rhyno.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 100%;
+  }
+
+  .hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  footer p {
+    color: rgba(255, 255, 255, 0.623) !important;
+    font-weight: 400;
+  }
+
+  
