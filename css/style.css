@@ -1,14 +1,153 @@
+:root {
+  --primary-brand-color: #E6584B;
+  --secondary-brand-color: #FFFCF5;
+  --accent-color: #00505A;
+  --primary-font-family: 'Montserrat';
+  }
+
+
 * {
     box-sizing: border-box;
   }
 
   body {
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--primary-font-family), sans-serif !important;
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: #FFFFFF;
+    background: linear-gradient(rgba(32, 32, 32, 0.7), rgba(255, 255, 255, 0.7)), url("/img/maldives.jpeg");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
+  }
+
+  .navbar {
+    padding-top: 40px !important;
+
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    color: var(--secondary-brand-color)!important;
+    font-weight: 800;
+  }
+
+  .navbar-brand {
+    color: var(--secondary-brand-color) !important;
+  }
+
+  .logo {
+    letter-spacing: 5px;
+    transition: all .2s ease-in-out;
+  }
+
+  .logo:hover {
+    transform: scale(1.5); 
+  }
+
+  ul li a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary-brand-color) !important;
+  }
+
+  ul li a:hover {
+    color: var(--primary-brand-color) !important;
+  }
+
+  .login-btn {
+    background: var(--primary-brand-color) !important;
+    color: var(--secondary-brand-color) !important;
+    padding: 15px 30px !important;
+    margin-left: 10px;
+    font-weight: bold !important;
+    letter-spacing: 2px;
+    border: none !important;
+  }
+
+  .login-btn:hover {
+    background: var(--accent-color) !important;
+    color: var(--secondary-brand-color) !important;
+  }
+
+
+
+  main {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 20px;
+ }
+
+  main {
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .left-side {
+    margin-top: 80px;
+  }
+
+  h1 {
+    color: var(--secondary-brand-color) !important;
+    font-size: 60px !important;
+    font-weight: 700 !important;
+  }
+
+  .icons {
+    margin-top: 40px;
+  }
+
+  .fab {
+    font-size: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+  }
+
+  .fab:hover {
+    color: var(--primary-brand-color);
+  }
+
+  .line{
+    width: 40px;
+    height: 3px;
+    background: var(--secondary-brand-color);
+    transition:2s;
+    -webkit-transition:2s;
+    -moz-transition:2s;
+    position:absolute;
+    right:calc(100% - 80px);
+  }
+
+  .line:hover {
+    right:0;
+  }
+
+  form {
+    margin-top: 80px;
+  }
+
+  input[type="text"] {
+    padding: 15px 35px;
+    width: 400px;
+    border: none;
+  }
+
+  input[type="submit"] {
+    background: var(--primary-brand-color);
+    color: var(--secondary-brand-color);
+    padding: 15px 35px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
   }
