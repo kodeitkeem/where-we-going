@@ -1,6 +1,6 @@
 :root {
   --primary-brand-color: #E6584B;
-  --secondary-brand-color: #FFFCF5;
+  --secondary-brand-color: #FFF6E2;
   --accent-color: #00505A;
   --primary-font-family: 'Montserrat';
   }
@@ -216,4 +216,39 @@
     font-weight: 400;
   }
 
+  .modal {
+    position: relative !important;
+    max-width: 900px !important;
+    height: 50vh !important;
+    padding: 0 !important;
+  }
+
   
+  .modal a.close-modal {
+    top: 14px !important;
+    right: 14px !important;
+  }
+
+  .right-modal {
+    height: 100%;
+    background: var(--secondary-brand-color);
+    padding: 15px 50px !important;
+  }
+
+  .right-modal p {
+    text-transform: capitalize;
+  }
+
+  .left-modal {
+    height: 100%;
+    background: #FFFFFF;
+  }
+
+  .box {
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
+
+  .h6, h6, p {
+    margin: 0 !important;
+  }
