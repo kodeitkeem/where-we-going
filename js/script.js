@@ -1,8 +1,10 @@
 //Constants
 const BASE_URL = 'https://restcountries.eu/rest/v2/name/';
+const GIPHY_API_KEY = 'qCrrrix7pdCNfLBu86BLr3y6zyK8uLev';
+const GIPHY_URL = 'https://api.giphy.com/v1/gifs/random?api_key=';
 
 //Variables
-let countryData, userInput;
+let countryData, userInput, giphyGif;
 
 //Cached Elements References
 const $img1 = $('#img1');
@@ -12,12 +14,27 @@ const $body = $('body');
 const $form = $('form');
 const $input = $('input[type="text"]');
 const $modal = $('#modal');
+const $countryName = $('#country-name');
+const $capital = $('#capital');
+const $currencyName = $('#currency-name');
+const $currencySymbol = $('#currency-symbol');
+const $language = $('#language');
+const $continent = $('#continent');
+const $countryCode = $('#country-code');
+const $callingCode = $('#calling-code');
+const $nationality = $('#nationality');
+const $population = $('#population');
+const $borderingCountries = $('#bordering-countries');
+const $flag = $('#country-flag');
+const $gif = $('#random-gif');
+
 
 //Event Listeners
-$img1.hover(switchBackgroundOne);
-$img2.hover(switchBackgroundTwo);
-$img3.hover(switchBackgroundThree);
+
 $form.on('submit', getCountryData);
+$img1.on('click', switchBackgroundOne);
+$img2.on('click', switchBackgroundTwo);
+$img3.on('click', switchBackgroundThree);
 
 //Functions
 
@@ -27,6 +44,15 @@ function getCountryData(evt){
     userInput = $input.val();
     if(!userInput) return;
 
+    $.ajax(GIPHY_URL + GIPHY_API_KEY + `&tag=${userInput}&rating=g`)
+    .then(function(details){
+        giphyGif = details;
+        console.log(giphyGif.data.embed_url);
+        $gif.attr('src', `${giphyGif.data.images.downsized_large.url}`);
+    }, function(error){
+        console.log('Its not working fam: ', error);
+    })
+    
     $.ajax(BASE_URL + userInput)
     .then(function(data){
         countryData = data;
@@ -35,10 +61,43 @@ function getCountryData(evt){
     }, function(error){
         console.log('Its not working fam: ', error);
     })
+
 }
+
+
+
 
 function render(){
     $modal.modal();
+    $countryName.text(`${countryData[0].name}`);
+    $capital.text(`${countryData[0].capital}`);
+    $currencyName.text(`${countryData[0].currencies[0].name}`);
+    $currencySymbol.text(`${countryData[0].currencies[0].symbol}`);
+    $language.text(`${countryData[0].languages[0].name}`);
+    $continent.text(`${countryData[0].subregion}`);
+    $countryCode.text(`${countryData[0].alpha3Code}`);
+    $callingCode.text(`${countryData[0].callingCodes[0]}`);
+    $nationality.text(`${countryData[0].demonym}`);
+    $population.text(`${countryData[0].population}`);
+    $borderingCountries.text(`${countryData[0].borders}`);
+    $flag.attr('src', `${countryData[0].flag}`);
+    
+
+    // var map = L.map('mapid', {
+    //     center: [countryData[0].latlng[0], countryData[0].latlng[1]],
+    //     zoom: 5
+    // }); 
+
+    // L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiYWtlZW1kYWludHkiLCJhIjoiY2tnaG1nZGRrMWY2bzJxbGpybXhmcmQzZCJ9.cG79UU7d6nHWljY7Rn-_GA', {
+    //     attribution: '',
+    //     maxZoom: 18,
+    //     id: 'mapbox/streets-v11',
+    //     tileSize: 512,
+    //     zoomOffset: -1,
+    //     accessToken: 'sk.eyJ1IjoiYWtlZW1kYWludHkiLCJhIjoiY2tnaG1nZGRrMWY2bzJxbGpybXhmcmQzZCJ9.cG79UU7d6nHWljY7Rn-_GA'
+    // }).addTo(map);
+
+    
 }
 
 function switchBackgroundOne(){
@@ -67,4 +126,5 @@ function switchBackgroundThree(){
     "background-size": "cover"
                 });
 }
+
 
