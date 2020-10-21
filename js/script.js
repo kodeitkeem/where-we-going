@@ -46,7 +46,6 @@ function getCountryData(evt){
     $.ajax(GIPHY_URL + GIPHY_API_KEY + `&tag=${userInput}&rating=g`)
     .then(function(details){
         giphyGif = details;
-        console.log(giphyGif.data.embed_url);
         $gif.attr('src', `${giphyGif.data.images.downsized_large.url}`);
     }, function(error){
         console.log('Its not working fam: ', error);
@@ -56,7 +55,6 @@ function getCountryData(evt){
     .then(function(data){
         countryData = data;
         render();
-        console.log(data);
     }, function(error){
         console.log('Its not working fam: ', error);
     })
