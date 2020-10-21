@@ -1,11 +1,12 @@
-# Where We Going
+
+![Github Banner](https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/img/Github-banner.png)
 
 ## &#x1f4bb; Technologies
-* ![](https://img.shields.io/badge/HTML5-informational?style=flat-square&logo=HTML5&logoColor=white&color=E6584B)
-* ![](https://img.shields.io/badge/CSS3-informational?style=flat-square&logo=CSS3&logoColor=white&color=E6584B)
-* ![](https://img.shields.io/badge/JavaScript-informational?style=flat-square&logo=JavaScript&logoColor=white&color=E6584B)
-* ![](https://img.shields.io/badge/JQuery-informational?style=flat-square&logo=JQuery&logoColor=white&color=E6584B)
-* ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=white&color=E6584B)
+* ![](https://img.shields.io/badge/HTML5-informational?style=flat-square&logo=HTML5&logoColor=white&color=000000)
+* ![](https://img.shields.io/badge/CSS3-informational?style=flat-square&logo=CSS3&logoColor=white&color=000000)
+* ![](https://img.shields.io/badge/JavaScript-informational?style=flat-square&logo=JavaScript&logoColor=white&color=000000)
+* ![](https://img.shields.io/badge/JQuery-informational?style=flat-square&logo=JQuery&logoColor=white&color=000000)
+* ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=white&color=000000)
 * Web API's
 
 ## &#x1f310; API's Used
