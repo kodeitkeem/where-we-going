@@ -10,6 +10,10 @@
     box-sizing: border-box;
   }
 
+  html {
+    height: 100%;
+  }
+
   body {
     margin: 0;
     font-family: var(--primary-font-family), sans-serif !important;
@@ -19,9 +23,24 @@
     background: linear-gradient(rgba(43, 43, 43, 0.7), rgba(102, 102, 102, 0.7)), url("/img/maldives.jpeg");
     background-blend-mode: darken;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     align-items: center;
+    animation: zoom 60s infinite;
+  -webkit-animation: zoom 60s infinite;
+  }
+
+  @keyframes zoom {
+    0% {
+      background-size: 100%;
+  
+    }
+    50% {
+      background-size: 150%;
+    }
+    100% {
+      background-size: 100%;
+    }
   }
 
   .navbar {
@@ -218,8 +237,8 @@
 
   .modal {
     position: relative !important;
-    max-width: 900px !important;
-    height: 50vh !important;
+    max-width: 980px !important;
+    height: 55vh !important;
     padding: 0 !important;
   }
 
@@ -230,13 +249,18 @@
   }
 
   .right-modal {
-    height: 100%;
+    height: 100vh;
     background: var(--secondary-brand-color);
     padding: 15px 50px !important;
   }
 
   .right-modal p {
     text-transform: capitalize;
+  }
+
+  .right-modal h2 {
+    font-weight: bold;
+    color: var(--primary-brand-color);
   }
 
   .left-modal {
@@ -247,8 +271,23 @@
   .box {
     border-radius: 5px;
     padding: 5px 10px;
+    margin: 5px 0px;
+  }
+
+  .top-box {
+    margin-top: 40px;
   }
 
   .h6, h6, p {
     margin: 0 !important;
   }
+
+  #mapid { 
+    width: 326px;
+    height: 400px;
+  
+}
+
+.leaflet-control-attribution a {
+  display: none !important;
+}
