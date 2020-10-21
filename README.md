@@ -61,10 +61,10 @@
 
 ## &#x1f4f7; Application Images
 * Homepage
-![](https://imgur.com/7kDocCm =300x)
+<img src="https://imgur.com/7kDocCm" width="300"/>
 
 * Modal-Popup
-![](https://imgur.com/51iOVy3 =300x)
+<img src="https://imgur.com/51iOVy3" width="300"/>
 
 ## &#x1f52e; Future Goals
 * A user will have the ability to login and view countriess they've previously searched. 
