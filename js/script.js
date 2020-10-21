@@ -43,7 +43,6 @@ function getCountryData(evt){
     evt.preventDefault();
     userInput = $input.val();
     if(!userInput) return;
-
     $.ajax(GIPHY_URL + GIPHY_API_KEY + `&tag=${userInput}&rating=g`)
     .then(function(details){
         giphyGif = details;
@@ -68,6 +67,7 @@ function getCountryData(evt){
 
 
 function render(){
+    
     $modal.modal();
     $countryName.text(`${countryData[0].name}`);
     $capital.text(`${countryData[0].capital}`);
@@ -81,6 +81,7 @@ function render(){
     $population.text(`${countryData[0].population}`);
     $borderingCountries.text(`${countryData[0].borders}`);
     $flag.attr('src', `${countryData[0].flag}`);
+    $input.val('');
     
 
     // var map = L.map('mapid', {
