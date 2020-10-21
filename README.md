@@ -61,10 +61,10 @@
 
 ## &#x1f4f7; Application Images
 * Homepage
-<img src="https://i.imgur.com/7kDocCm.png" width="300"/>
+<img src="https://i.imgur.com/7kDocCm.png" width="450"/>
 
 * Modal-Popup
-<img src="https://i.imgur.com/51iOVy3.png" width="300"/>
+<img src="https://i.imgur.com/51iOVy3.png" width="450"/>
 
 ## &#x1f52e; Future Goals
 * A user will have the ability to login and view countriess they've previously searched. 
@@ -74,7 +74,7 @@
 
 ## &#x1f4d0; Wireframes
 * Homepage
-![](https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/header-section.png =300x)
+<img src="https://i.imgur.com/zPQPpr8.png" width="450"/>
 
 * Modal-Popup
-![](https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/Modal-Popup-Wireframe.png =300x)
+<img src="https://i.imgur.com/GqNkY5i.png" width="450"/>
