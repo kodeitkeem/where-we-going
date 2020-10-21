@@ -1,10 +1,11 @@
 # Where We Going
 
 ## &#x1f4bb; Technologies
-* HTML5 & CSS3 
-* JavaScript ![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat-square=JavaScript&logoColor=white&color=F7DF1E)
-* JQuery
-* Bootstrap4
+* ![](https://img.shields.io/badge/HTML5-informational?style=flat-square&logo=HTML5&logoColor=white&color=E6584B)
+* ![](https://img.shields.io/badge/CSS3-informational?style=flat-square&logo=CSS3&logoColor=white&color=E6584B)
+* ![](https://img.shields.io/badge/JavaScript-informational?style=flat-square&logo=JavaScript&logoColor=white&color=E6584B)
+* ![](https://img.shields.io/badge/JQuery-informational?style=flat-square&logo=JQuery&logoColor=white&color=E6584B)
+* ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=white&color=E6584B)
 * Web API's
 
 ## &#x1f310; API's Used
