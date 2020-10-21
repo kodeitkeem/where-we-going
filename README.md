@@ -17,6 +17,11 @@
 * ![](https://img.shields.io/badge/Bootstrap4-informational?style=flat-square&logo=Bootstrap&logoColor=white&color=000000)
 * Web API's
 
+## &#x1f3ac; Getting Started
+* Link to Application --> 
+* Enter a country of your choice
+
+
 ## &#x1f680; Code Example
 * This is the main block of code being executed, it fetches both the countries API and the GIPHY's API using AJAX. The API's then returns data that we use to populate the DOM. 
 
@@ -54,6 +59,13 @@
 ## &#x2714; How To use the app?
 * Simply enter the country you'd like to look up into the search box and click search
 
+## &#x1f4f7; Application Images
+* Homepage
+![](https://imgur.com/7kDocCm =300x)
+
+* Modal-Popup
+![](https://imgur.com/51iOVy3 =300x)
+
 ## &#x1f52e; Future Goals
 * A user will have the ability to login and view countriess they've previously searched. 
 * Users will get much more information returned to them such as popular cities, landmarks, tourist attractions etc...
@@ -61,8 +73,8 @@
 * Making the app fully responsive
 
 ## &#x1f4d0; Wireframes
-### Homepage
-https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/header-section.png
+* Homepage
+![](https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/header-section.png =300x)
 
-### Modal-Popup
-https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/Modal-Popup-Wireframe.png
+* Modal-Popup
+![](https://raw.githubusercontent.com/kodeitkeem/where-we-going/master/wireframes/Modal-Popup-Wireframe.png =300x)
