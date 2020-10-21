@@ -18,8 +18,8 @@
 * Web API's
 
 ## &#x1f3ac; Getting Started
-* Link to Application --> 
-* Enter a country of your choice
+* Link to Application --> https://where-we-going.netlify.app/
+* Enter a country of your choice and click search
 
 
 ## &#x1f680; Code Example
@@ -56,8 +56,6 @@
 * https://restcountries.eu/
 * https://developers.giphy.com/docs/api/
 
-## &#x2714; How To use the app?
-* Simply enter the country you'd like to look up into the search box and click search
 
 ## &#x1f4f7; Application Images
 * Homepage
@@ -71,6 +69,7 @@
 * Users will get much more information returned to them such as popular cities, landmarks, tourist attractions etc...
 * Implementation of the map location of the searched country 
 * Making the app fully responsive
+* Implementation of currency exchange
 
 ## &#x1f4d0; Wireframes
 * Homepage
