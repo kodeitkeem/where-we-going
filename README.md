@@ -51,7 +51,7 @@
 * https://restcountries.eu/
 * https://developers.giphy.com/docs/api/
 
-## How To use the app?
+## &#x2714; How To use the app?
 * Simply enter the country you'd like to look up into the search box and click search
 
 ## &#x1f52e; Future Goals
