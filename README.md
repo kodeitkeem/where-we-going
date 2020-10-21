@@ -10,8 +10,8 @@
 * Web API's
 
 ## &#x1f310; API's Used
-https://restcountries.eu/
-https://developers.giphy.com/docs/api/
+* https://restcountries.eu/
+* https://developers.giphy.com/docs/api/
 
 ## 	&#x1f511; Features 
 * The purpose of this app is to allow a user to input a country they'd like to visit in the future and get back some basic general information about that country.. and a random gif to go with the search tag. 
