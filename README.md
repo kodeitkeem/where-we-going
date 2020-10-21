@@ -18,7 +18,7 @@
 * Web API's
 
 ## &#x1f3ac; Getting Started
-* Link to Application --> https://where-we-going.netlify.app/
+* Link to Application --> <a href="https://where-we-going.netlify.app/" target="_blank">https://where-we-going.netlify.app/</a>
 * Enter a country of your choice and click search
 
 
@@ -53,8 +53,8 @@
 ```
 
 ## &#x1f310; API's Used
-* https://restcountries.eu/
-* https://developers.giphy.com/docs/api/
+* <a href="https://restcountries.eu/" target="_blank">https://restcountries.eu/</a>
+* <a href="https://developers.giphy.com/docs/api/" target="_blank">https://developers.giphy.com/docs/api/</a>
 
 
 ## &#x1f4f7; Application Images
