@@ -1,6 +1,6 @@
 //Constants
 const ACCESS_KEY = 'b20b69374f9fa72623a26b7a15e77d44';
-const BASE_URL = `https://restcountries.com/v3.1/all/name/`;
+const BASE_URL = `https://restcountries.com/v3.1/name/`;
 const GIPHY_API_KEY = 'qCrrrix7pdCNfLBu86BLr3y6zyK8uLev';
 const GIPHY_URL = 'https://api.giphy.com/v1/gifs/random?api_key=';
 
