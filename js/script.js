@@ -1,5 +1,6 @@
 //Constants
-const BASE_URL = 'https://restcountries.eu/rest/v2/name/';
+const ACCESS_KEY = 'dbab01011ef3231e2c8e107c31ea0cbc';
+const BASE_URL = 'https://api.countrylayer.com/v2/all?access_key=${ACCESS_KEY}';
 const GIPHY_API_KEY = 'qCrrrix7pdCNfLBu86BLr3y6zyK8uLev';
 const GIPHY_URL = 'https://api.giphy.com/v1/gifs/random?api_key=';
 
@@ -54,6 +55,7 @@ function getCountryData(evt){
     $.ajax(BASE_URL + userInput)
     .then(function(data){
         countryData = data;
+        console.log(data);
         render();
     }, function(error){
         console.log('Its not working fam: ', error);
